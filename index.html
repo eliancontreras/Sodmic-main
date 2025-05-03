@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Evento Sodimac - Q1 2025</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="page3Styles.css" />
+</head>
+<body>
+
+  <!-- ✅ Mobile Navbar -->
+  <nav class="mobile-navbar d-block d-md-none navbar py-3 px-3">
+    <div class=" d-flex justify-content-between align-items-center position-relative">
+      <img src="./images/page3/home-logo.png" alt="Logo" class="navbar-logo" />
+      <img src="./images/page3/logo.png" alt="Slogan" class="navbar-slogan" />
+    </div>
+  </nav>
+
+  <!-- ✅ Desktop Navbar -->
+  <div class="custom-navbar">
+    <div class="navbar-left">
+      <img src="./images/page3/logo.png" alt="Left Logo" />
+    </div>
+    <div class="navbar-right">
+      <div class="d-flex flex-row align-items-center justify-content-center h-100">
+        <img src="./images/page3/home-logo.png" alt="Right Logo" class="me-4 mb-2 h-12 w-auto" />
+        <h1 class="mb-1 fw-bold fs-1">SODIMAC</h1>
+      </div>
+      <p class="mb-0 fs-4"> LUNES 12 DE MAYO / 09.00 HRS / WWW.ENCUENTROSODIMAC.CL
+      </p>
+    </div>
+  </div>
+
+  <!-- ✅ Desktop Layout -->
+  <div class="container-fluid d-none d-md-block mt-5 mb-0">
+    <div class="row">
+      <div class="col-md-3 d-flex align-items-center justify-content-center mt-5 desktop-only">
+        <img src="./images/page3/left-red-solid.png" alt="Left Logo" class="img-fluid" />
+      </div>
+
+      <div class="col-md-6 d-flex flex-column align-items-center mt-5">
+        <div class="d-flex flex-row mb-4 justify-content-between align-items-center w-100 px-4">
+          <h1 class="fs-4 text-blueclass d-block d-md-none m-0">Juntos, lo hacemos posible</h1>
+
+          <!-- ✅ Hoverable Image -->
+          <div class="ms-auto">
+            <a href="#video-section" class="clickable-image">
+              <img src="./images/page3/small-object-video.png" alt="Decorative" class="img-fluid d-block mx-auto" />
+            </a>
+          </div>
+        </div>
+
+        <!-- ✅ Video with Play Button -->
+        <div class="video-container position-relative" id="video-section">
+          <img src="./images/page3/frame2.png" alt="Frame" class="video-frame" />
+          <video id="sodimacVideo" playsinline class="w-100">
+
+            <!-- place video here  -->
+            <source src="./images/page3/video/Conoce Sodimac.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <button id="playButton" class="custom-play-btn">
+            <img src="./images/page3/play.png" alt="Play" class="play-icon">
+          </button>
+        </div>
+      </div>
+
+      <div class="col-md-3 d-flex align-items-center justify-content-center desktop-only">
+        <img src="./images/page3/barcode-right.png" alt="Barcode" class="img-fluid mt-2" />
+      </div>
+    </div>
+  </div>
+
+<!-- ✅ Mobile Layout -->
+<div class="mobile-layout d-block d-md-none">
+  <div class="mobile-header-column">
+    <h1 class="fs-4 text-blueclass text-center">Juntos, lo hacemos posible</h1>
+    <div class="ms-auto">
+      <a href="https://www.google.com/" class="clickable-image" target="_blank">
+        <img src="./images/page3/small-object-video.png" alt="Decorative" class="img-fluid d-block mx-auto" />
+      </a>
+    </div>
+  </div>
+
+  <div class="mobile-video" id="video-section-mobile">
+    <div class="video-container position-relative">
+      <img src="./images/page3/frame2.png" alt="Frame" class="video-frame" />
+      <video id="sodimacVideoMobile" playsinline autoplay="true" class="w-100">
+                    <!-- place video here  -->
+
+        <source src="./images/page3/video/Conoce Sodimac.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <button id="playButtonMobile" class="custom-play-btn">
+        <img src="./images/page3/play.png" alt="Play" class="play-icon">
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-left-section"></div>
+</div>
+
+
+  <!-- ✅ Mobile Footer -->
+  <footer class="mobile-footer d-block d-md-none text-white text-center py-3 px-0">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-auto">
+        <img src="./images/page3/home-logo.png" alt="Logo" class="logo-img">
+      </div>
+      <div class="col-auto text-white">
+        <p class="m-0 fs-3 fs-md-4 fw-bold">Sodimac</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ✅ JS Logic for Video Play -->
+  <script>
+    document.getElementById("playButton")?.addEventListener("click", function () {
+      const video = document.getElementById("sodimacVideo");
+      video.play();
+      this.style.display = "none";
+    });
+
+    document.getElementById("playButtonMobile")?.addEventListener("click", function () {
+      const video = document.getElementById("sodimacVideoMobile");
+      video.play();
+      this.style.display = "none";
+    });
+  </script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

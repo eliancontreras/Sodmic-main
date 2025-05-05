@@ -21,7 +21,7 @@
 
 @font-face {
   font-family: 'BundayClean-seLighIt';
-  src: url('./font/Buntype\ -\ BundayClean-SeLighIt.otf') format('truetype');
+  src: url('./font/BundayClean-SemiLight.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -53,7 +53,7 @@ html, body {
 .custom-navbar {
   display: flex;
   flex-direction: row;
-  height: 200px;
+  height: 300px;
   width: 100%;
 }
 
@@ -88,11 +88,67 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 60px;
+  /* padding-bottom: 60px; */
   box-sizing: border-box;
   overflow-x: hidden;
   overflow-y: hidden;
 }
+
+.red-solid-background{
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 75%;
+  background-color: #DB0122;
+  opacity: 0.85;
+  z-index: 1;
+}
+
+.redsolid_div{
+  min-height: 100%;
+}
+
+.red-solid-2ndDiv{
+  z-index: 2;
+  padding: 2rem;
+  height: 100%;
+  width: 100%;
+}
+
+.red-Sold3rdDiv{
+  color: white;
+  font-family: 'BundayClean-bold', sans-serif;
+  font-size: rem;
+  width: 75%; /* Matches red area width */
+  padding: 1rem;
+  margin-top: auto; /* Pushes to bottom */
+}
+.red-Sold3rdDiv p {
+  font-size: clamp(1.6rem, 2vw + 1rem, 2.9rem);
+}
+
+
+  /* Add this to your CSS */
+  .red-solid-background {
+    position: absolute;
+    left: 0;
+    top: 5% !important;
+    bottom: 0;
+    width: 75%;
+    background-color: #DB0122;
+    opacity: 0.85;
+    z-index: 1;
+  }
+  
+  .text-content {
+    color: white;
+    font-family: 'BundayClean-bold', sans-serif;
+    font-size: 1.2rem;
+    padding: 1rem;
+    width: 75%; /* Matches red area width */
+    margin-top: auto; /* Key property for bottom alignment */
+  }
 
 .navbar-right {
   width: 70%;
@@ -104,6 +160,8 @@ body {
   text-align: center;
   color: white;
   padding: 10px;
+  height: 150px;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,7 +169,7 @@ body {
 
 .navbar-left img,
 .navbar-right img {
-  max-height: 80px;
+  /* max-height: 80px; */
   object-fit: contain;
 }
 
@@ -292,7 +350,7 @@ body {
   }
 
   .mobile-header-column h1 {
-    font-size: 1rem !important;
+    font-size: 0.8rem !important;
     margin-bottom: 0.5rem;
     text-align: center;
     width: 80% !important;

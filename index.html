@@ -16,7 +16,7 @@
   <!-- ✅ Mobile Navbar -->
   <nav class="mobile-navbar d-block d-md-none navbar py-3 px-3">
     <div class="d-flex justify-content-between align-items-center position-relative">
-      <img src="./images/page3/home-logo.png" alt="Logo" class="navbar-logo" />
+      <img src="./images/page3/logo-home-only.png" alt="Logo" class="navbar-logo" />
       <img src="./images/page3/logo.png" alt="Slogan" class="navbar-slogan" />
     </div>
   </nav>
@@ -28,8 +28,8 @@
     </div>
     <div class="navbar-right">
       <div class="d-flex flex-row align-items-center justify-content-center h-100">
-        <img src="./images/page3/home-logo.png" alt="Right Logo" class="me-4 mb-2 h-12 w-auto" />
-        <h1 class="mb-1 fw-bold fs-1">SODIMAC</h1>
+        <img src="./images/page3/home-logo.png" alt="Right Logo" class="me-4 mb-2 h-50 w-auto" />
+
       </div>
       <p class="mb-0 fs-4"> LUNES 12 DE MAYO / 09.00 HRS / WWW.ENCUENTROSODIMAC.CL </p>
     </div>
@@ -38,10 +38,23 @@
   <!-- ✅ Desktop Layout -->
   <div class="container-fluid d-none d-md-block mb-0">
     <div class="row">
-      <div class="col-md-3 d-flex align-items-center justify-content-center mt-5 desktop-only">
-        <img src="./images/page3/left-red-solid.png" alt="Left Logo" class="img-fluid" />
+      <!-- Left Column - Modified -->
+      <div class="col-md-3 d-flex align-items-stretch justify-content-start mt-5 desktop-only position-relative p-0 redsolid_div">
+        <!-- Red Solid (75% width) -->
+        <div class="red-solid-background"></div>
+        
+        <!-- Content Container -->
+        <div class="position-relative z-index-2 d-flex flex-column red-solid-2ndDiv">
+          <!-- Text Content in Bottom Left (Red Area) -->
+          <div class="text-content mt-auto red-Sold3rdDiv">
+         
+            <p class="semi-lignt"> <span class="bold-font">Juntos,<br></bt></span><span class="text-nowrap">lo hacemos</span><br> posible</p>
+            
+          </div>
+        </div>
       </div>
-
+  
+      <!-- Center Column (unchanged) -->
       <div class="col-md-6 d-flex flex-column align-items-center mt-5">
         <div class="d-flex flex-row mb-4 justify-content-between align-items-center w-100 px-0">
           <div class="ms-auto">
@@ -50,7 +63,7 @@
             </a>
           </div>
         </div>
-
+  
         <!-- Desktop video -->
         <div class="video-container position-relative" id="video-section">
           <img src="./images/page3/frame2.png" alt="Frame" class="video-frame" />
@@ -58,21 +71,22 @@
             <source src="./images/page3/video/Conoce Sodimac.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          
-          
         </div>
       </div>
-
+  
+      <!-- Right Column (unchanged) -->
       <div class="col-md-3 d-flex align-items-center justify-content-center desktop-only">
         <img src="./images/page3/barcode-right.png" alt="Barcode" class="img-fluid mt-2" />
       </div>
     </div>
   </div>
+  
+
 
   <!-- ✅ Mobile Layout -->
   <div class="mobile-layout d-block d-md-none">
     <div class="mobile-header-column">
-      <h1 class="fs-4 text-blueclass text-center semi-bold"><span class="extra-bold">Juntos,</span> lo hacemos posible</h1>
+      <h1 class="fs-6 text-blueclass text-center semi-bold"><span class="extra-bold">Juntos,</span> lo hacemos posible</h1>
       <div class="ms-auto">
         <a href="https://www.google.com/" class="clickable-image" target="_blank">
           <img src="./images/page3/small-object-video.png" alt="Decorative" class="img-fluid d-block mx-auto" />
@@ -108,11 +122,6 @@
     <div class="row align-items-center justify-content-center">
       <div class="col-auto p-0 m-0">
         <img src="./images/page3/home-logo.png" alt="Logo" class="logo-img mb-2" />
-      </div>
-      <div class="col-auto text-white p-1">
-        <p class="m-0 fs-5 fs-md-4 bold-font pt-1">
-          SODIMAC<sup class=" align-text-bottom ">®</sup>
-        </p>
       </div>
     </div>
   </footer>

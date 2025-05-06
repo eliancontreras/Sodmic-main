@@ -117,6 +117,7 @@ body {
 
 .redsolid_div{
   min-height: 100%;
+  margin-bottom: -300px;
 }
 
 .red-solid-2ndDiv{
@@ -135,6 +136,7 @@ body {
 .red-Sold3rdDiv p {
   font-size: clamp(1.6rem, 2vw + 1rem, 2.9rem);
   line-height: 1; /* Adjust as needed, try 1.1 or 1 for tighter spacing */
+  margin-bottom: 300px;
 
 }
 
@@ -239,6 +241,7 @@ body {
   /* border-radius: 12px; */
   position: relative;
   z-index: 2;
+  margin-top: 3px;
 }
 
 .video-frame {
@@ -246,7 +249,7 @@ body {
   top: -10%;
   left: -10%;
   width: 120%;
-  height: 120%;
+  height: 122%;
   z-index: 1;
   pointer-events: none;
   object-fit: fill;
